@@ -39,12 +39,30 @@
     },
     "extends": [
       "plugin:vue/vue3-essential",
-      "@vue/standard"
+      "eslint:recommended"
     ],
     "parserOptions": {
       "parser": "babel-eslint"
     },
-    "rules": {}
+    "rules": {
+      "no-console": 0,
+      "no-debugger": 0,
+      "indent": 0,
+      "comma-dangle": 0,
+      "semi": 0,
+      "object-curly-spacing": 0,
+      "space-before-function-paren": 0,
+      "no-sequences": 0,
+      "no-async-promise-executor": 0,
+      "arrow-spacing": 0,
+      "one-var": 0,
+      "spaced-comment": 0,
+      "eol-last": 0,
+      "quotes": 0,
+      "no-empty": 0,
+      "no-unused-vars": 0,
+      "vue/no-unused-vars": 0
+    }
   },
   "browserslist": [
     "> 1%",
