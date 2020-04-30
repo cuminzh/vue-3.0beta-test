@@ -1,5 +1,6 @@
 <template>
   <div class="div-test">{{count}} {{object.foo}}</div>
+  <div>{{countString}}</div>
   <test-children :child-count="count"/>
 </template>
 
@@ -12,11 +13,13 @@
     components: {TestChildren},
     setup () {
       const count = ref(0)
+      const countString = ref('dd')
       const object = reactive({ foo: 'bar' })
       // return () => h('div', [count.value, object.foo])
       return {
         count,
-        object
+        object,
+        countString
       }
     }
   }
